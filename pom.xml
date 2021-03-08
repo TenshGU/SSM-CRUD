@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org</groupId>
+  <artifactId>SSM-CRUD</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>SSM-CRUD Maven Webapp</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <!--SpringMVC-->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>5.3.4</version>
+    </dependency>
+
+    <!--Spring-JDBC-->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.3.4</version>
+    </dependency>
+
+    <!--Spring面向切面编程-->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aspects</artifactId>
+      <version>5.3.4</version>
+    </dependency>
+
+    <!--Spring单元测试-->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>5.3.4</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!--MyBatis-->
+    <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.5.6</version>
+    </dependency>
+
+    <!--MyBatis-Spring-->
+    <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>2.0.6</version>
+    </dependency>
+
+    <!--MBG-->
+    <!-- https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core -->
+    <dependency>
+      <groupId>org.mybatis.generator</groupId>
+      <artifactId>mybatis-generator-core</artifactId>
+      <version>1.4.0</version>
+    </dependency>
+
+    <!--pagehelper插件-->
+    <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+      <version>5.2.0</version>
+    </dependency>
+
+    <!--C3P0数据库连接池不兼容，出现异常，所以采用德鲁伊-->
+    <!--德鲁伊数据库连接池-->
+    <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+
+
+    <!--MySQL数据库驱动-->
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.23</version>
+    </dependency>
+
+    <!--JSTL-->
+    <!-- https://mvnrepository.com/artifact/jstl/jstl -->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+    <!--Servlet，在服务器中已存在，所以标注scope范围为provided，当发布时，便去除这个包-->
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!--jackson-->
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.12.1</version>
+    </dependency>
+
+    <!--用于校验格式-->
+    <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>7.0.1.Final</version>
+    </dependency>
+  </dependencies>
+
+</project>
